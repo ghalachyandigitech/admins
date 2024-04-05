@@ -1,0 +1,79 @@
+#menu{
+    border: 1px solid red;
+    width: 12%;
+    height: 580px;
+    float: left;
+}
+
+.visitors-count{
+    float: right;
+    width: 25px;
+    height: 25px;
+    background-color: aliceblue;
+    border-radius: 50%;
+    text-align: center;
+    margin: 8px;
+}
+
+.visitors-header{
+    height: 42px;
+    width: 100%;
+    border: 1px solid;
+    cursor: pointer;
+    background-color: darkkhaki;
+}
+
+.visitor{
+    width: 99%;
+    height: 30px;
+    border: 1px solid;
+    margin: 4px;
+    background-color: beige;
+}
+
+.visitors-body{
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 300px;
+    width: 100%;
+    border: 1px solid blue;
+    background-color: floralwhite;
+}
+
+#visitors{
+    float: left;
+    width: 67%;
+    height: 580px;
+    border: 1px solid;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#chats{
+    border: 1px solid green;
+    width: 100%;
+    height: 575px;
+    float: left;
+}
+
+#views{
+    float: right;
+    border: 1px solid;
+    height: 580px;
+    width: 20%;
+}
+
+#window{
+    border: 1px solid red;
+    height: 1160px;
+}
+
+#header{
+    border: 1px solid green;
+    height: 100px;
+}
+
+#body{
+    border: 1px solid blue;
+    height: 540px;
+}

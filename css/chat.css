@@ -1,0 +1,126 @@
+.chat-window{
+    float: left;
+    border: 1px solid red;
+    position: relative;
+    max-width: 950px;
+    min-width: 950px;
+}
+
+.chat-header{
+    border: 1px solid green;
+    height: 100px;
+}
+
+.unread{
+    background-color: lightgrey;
+}
+
+.message-time{
+    margin: 0 5px 0 5px;
+    font-size: small;
+    color: burlywood;
+}
+
+.message{
+    border: 1px solid;
+    height: auto;
+    min-height: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.messages{
+    background-color: beige;
+    border: 1px solid blue;
+    height: 380px;
+    max-height: 653px;
+    overflow-y: auto;
+}
+
+.messaging{
+    border: 1px solid yellow;
+    height: 114px;
+}
+
+.status{
+    height: 25px;
+    width: 25px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.message-content{
+    color: #0A0A0A;
+    width: fit-content;
+    position: relative;
+    margin: 5px 10px;
+    padding: 4px 10px;
+    max-width: 70%;
+    background: #9094c9;
+    word-break: break-word;
+    white-space: pre-wrap;
+    border-radius: 10px;
+}
+
+.message-content-arrow{
+    content: "";
+    position: absolute;
+    display: block;
+    top: calc(100% - 10px);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent #9094c9 transparent;
+}
+
+.name-loader, .name-loader:before, .name-loader:after {
+    border-radius: 50%;
+    width: 2.5em;
+    height: 2.5em;
+    animation-fill-mode: both;
+    animation: bblFadInOut 1.8s infinite ease-in-out;
+}
+.name-loader {
+    margin-left: 20px;
+    color: green;
+    font-size: 6px;
+    position: absolute;
+    text-indent: -9999em;
+    transform: translateZ(0);
+    animation-delay: -0.16s;
+}
+.name-loader:before,
+.name-loader:after {
+    content: '';
+    position: absolute;
+    top: 0;
+}
+.name-loader:before {
+    left: -3em;
+    animation-delay: -0.32s;
+}
+.name-loader:after {
+    left: 3em;
+}
+
+.chat-end{
+    cursor: pointer;
+    float: right;
+    font-size: 25px;
+    border: 5px outset;
+    width: 30px;
+    text-align: center;
+    margin: 3px;
+    margin-left: auto;
+}
+
+.chat-end:hover{
+    border: 5px inset;
+}
+
+@keyframes bblFadInOut {
+    0%, 80%, 100% { box-shadow: 0 2.5em 0 -1.3em }
+    40% { box-shadow: 0 2.5em 0 0 }
+}
